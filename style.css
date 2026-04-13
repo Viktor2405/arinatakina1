@@ -1,0 +1,148 @@
+@import url('style.css');
+
+/* Стили для активной ссылки в навигации */
+.nav-menu .active {
+    color: #8b7355 !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-menu .active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8b7355;
+    border-radius: 1px;
+}
+
+/* Убираем стандартное подчеркивание для всех ссылок */
+.nav-menu a {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Ховер эффект для неактивных ссылок */
+.nav-menu a:not(.active):hover {
+    color: #8b7355 !important;
+}
+
+/* Анимация при наведении на неактивные ссылки */
+.nav-menu a:not(.active):hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #8b7355;
+    border-radius: 1px;
+    opacity: 0.5;
+}
+
+/* Улучшаем отображение пунктов меню */
+.nav-menu li {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.services {
+    padding: clamp(60px, 8vw, 80px) 0;
+    flex: 1;
+}
+
+/* ИСПРАВЛЕНО: ОДНО объявление для сетки услуг 2x2 */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.service-price {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    text-align: left;
+}
+
+.service-features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.service-features li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/* Стили для акций через JavaScript */
+.promo-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.promo-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #8b7355;
+    margin-bottom: 1rem;
+}
+
+.promo-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#promoContainer {
+    min-height: 400px;
+    position: relative;
+}
+
+/* Адаптивность */
+@media (max-width: 767px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

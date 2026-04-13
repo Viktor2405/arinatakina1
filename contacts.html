@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Radiant Reflections</title>
+    <!-- ИСПРАВЛЕНО: правильные пути к CSS файлам -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <div class="logo-container">
+                        <div class="logo">RR</div>
+                        <div class="logo-text">
+                            <div class="logo-main">Radiant Reflections</div>
+                            <div class="logo-sub">Профессиональный визажист</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Гамбургер меню -->
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+                <li><a href="booking.html">Запись</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Свяжитесь со мной удобным способом</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-grid">
+                <!-- Левая колонка: Контактная информация -->
+                <div class="contact-info">
+                    <h2 style="color: #8b7355; margin-bottom: 2rem; padding-bottom: 15px; border-bottom: 2px solid rgba(139, 115, 85, 0.2);">Контактная информация</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">☎</div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+79803429804">+7 (980) 342-98-04</a></p>
+                            <small>Доступен с 9:00 до 21:00</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:radiant-reflection@mail.ru">radiant-reflection@mail.ru</a></p>
+                            <small>Отвечаю в течение 2 часов</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⚲</div>
+                        <div class="contact-details">
+                            <h3>Студия</h3>
+                            <p>Москва, ул. Никольская, 10</p>
+                            <small>м. Лубянка, 3 минуты пешком</small>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏲</div>
+                        <div class="contact-details">
+                            <h3>Часы работы</h3>
+                            <p>Пн-Пт: 10:00 - 20:00</p>
+                            <p>Сб-Вс: 11:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⌯⌲</div>
+                        <div class="contact-details">
+                            <h3>Мессенджеры</h3>
+                            <p>
+                                <a href="https://wa.me/79803429804" target="_blank">WhatsApp</a> • 
+                                <a href="https://t.me/radiant_reflections" target="_blank">Telegram</a>
+                            </p>
+                            <small>Быстрая связь в рабочее время</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">⛟</div>
+                        <div class="contact-details">
+                            <h3>Как добраться</h3>
+                            <p>Выход из метро "Лубянка" к ГУМу, 150 метров по Никольской улице. Студия находится в арке.</p>
+                            <small>Парковка на Театральном проезде</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: Карта -->
+                <div class="map-section">
+                    <div class="map-container">
+                        <iframe 
+                            class="map-frame"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2139508470647!2d37.62412691582107!3d55.756295380555036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5b9f6f9bcd%3A0xb3847d6d1287c419!2z0YPQuy4g0J3QuNC60L7Qu9GB0YLRjCwgMTAsINCc0L7RgdC60LLQsCwgMTA5MDQ5!5e0!3m2!1sru!2sru!4v1647861234567!5m2!1sru!2sru"
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        
+                        <div class="map-overlay">
+                            <h3>
+                                <span class="map-icon">⚲</span>
+                                Наш адрес
+                            </h3>
+                            <p><strong>Москва, ул. Никольская, 10</strong></p>
+                            <p>м. Лубянка • Вход в арке</p>
+                            <p class="map-coordinates">Координаты для навигатора: 55.756295, 37.624127</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Форма обратной связи -->
+            <div class="form-section">
+                <h2>Форма обратной связи</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="Имя" placeholder="Введите ваше имя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Почта *</label>
+                        <input type="email" id="email" name="Email" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="Телефон" placeholder="+7 (980) 342-98-04">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Интересующая услуга</label>
+                        <select id="service" name="Услуга">
+                            <option value="">Выберите услугу</option>
+                            <option value="Свадебный визаж">Свадебный макияж</option>
+                            <option value="Вечерний макияж">Вечерний макияж</option>
+                            <option value="Обучение визажу">Обучение макияжу</option>
+                            <option value="Express-макияж">Express-макияж</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение *</label>
+                        <textarea id="message" name="Сообщение" placeholder="Напишите ваше сообщение..." rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem; margin-top: 1rem;">Отправить сообщение</button>
+                </form>
+            </div>
+            
+            <!-- Блок с дополнительной информацией -->
+            <div class="info-block" style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(139,115,85,0.05), rgba(212,184,150,0.05)); border-radius: 12px; border-left: 4px solid #8b7355;">
+                <h3 style="color: #8b7355; margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.2rem;">💡</span>
+                    Важная информация
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div>
+                        <h4 style="color: #666; margin-bottom: 0.5rem; font-size: 1rem;">Запись</h4>
+                        <p style="color: #666; font-size: 0.9rem;">Рекомендую записываться заранее, особенно на свадебные даты. Доступна предварительная консультация.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #666; margin-bottom: 0.5rem; font-size: 1rem;">Оплата</h4>
+                        <p style="color: #666; font-size: 0.9rem;">Принимаю наличные и безналичный расчет. Для свадебных услуг требуется предоплата 30%.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #666; margin-bottom: 0.5rem; font-size: 1rem;">Выезд</h4>
+                        <p style="color: #666; font-size: 0.9rem;">Возможен выезд на мероприятие. Стоимость выезда обсуждается индивидуально.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <div class="logo-container" style="gap: 0.8rem;">
+                            <div class="logo" style="width: 40px; height: 40px; font-size: 1rem;">RR</div>
+                            <div class="logo-text">
+                                <div class="logo-main" style="color: white; font-size: 1.3rem;">Radiant Reflections</div>
+                                <div class="logo-sub" style="color: rgba(255,255,255,0.7);">Ваш профессиональный визажист</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Radiant Reflections. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Гамбургер меню
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Закрытие меню при клике на ссылку
+                document.querySelectorAll('.nav-menu a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+            
+            // Валидация формы
+            const contactForm = document.getElementById('contact-form');
+            const phoneInput = document.getElementById('phone');
+            
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    
+                    if (value.length > 0) {
+                        value = value.match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                        e.target.value = !value[2] ? value[1] : '+7 (' + value[2] + ') ' + value[3] + (value[4] ? '-' + value[4] : '') + (value[5] ? '-' + value[5] : '');
+                    }
+                });
+            }
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    let isValid = true;
+                    const nameInput = document.getElementById('name');
+                    const emailInput = document.getElementById('email');
+                    const messageInput = document.getElementById('message');
+                    
+                    // Удаляем предыдущие ошибки
+                    document.querySelectorAll('.error-message').forEach(el => el.remove());
+                    document.querySelectorAll('.form-group input, .form-group textarea, .form-group select').forEach(el => {
+                        el.style.borderColor = '';
+                    });
+                    
+                    // Проверка имени
+                    if (!nameInput.value.trim()) {
+                        showError(nameInput, 'Пожалуйста, введите ваше имя');
+                        isValid = false;
+                    }
+                    
+                    // Проверка email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailInput.value.trim()) {
+                        showError(emailInput, 'Пожалуйста, введите email');
+                        isValid = false;
+                    } else if (!emailRegex.test(emailInput.value)) {
+                        showError(emailInput, 'Пожалуйста, введите корректный email');
+                        isValid = false;
+                    }
+                    
+                    // Проверка сообщения
+                    if (!messageInput.value.trim()) {
+                        showError(messageInput, 'Пожалуйста, введите сообщение');
+                        isValid = false;
+                    } else if (messageInput.value.trim().length < 10) {
+                        showError(messageInput, 'Сообщение должно содержать минимум 10 символов');
+                        isValid = false;
+                    }
+                    
+                    if (isValid) {
+                        const submitBtn = contactForm.querySelector('button[type="submit"]');
+                        const originalText = submitBtn.textContent;
+                        
+                        submitBtn.textContent = 'Отправка...';
+                        submitBtn.disabled = true;
+                        
+                        // Имитация отправки
+                        setTimeout(() => {
+                            // Создаем сообщение об успехе
+                            const successMessage = document.createElement('div');
+                            successMessage.style.cssText = `
+                                background: #d4edda;
+                                color: #155724;
+                                padding: 15px;
+                                border-radius: 8px;
+                                margin-top: 20px;
+                                border: 1px solid #c3e6cb;
+                                text-align: center;
+                            `;
+                            successMessage.innerHTML = `
+                                <strong>✓ Сообщение успешно отправлено!</strong>
+                                <p style="margin: 5px 0 0 0; font-size: 0.9rem;">
+                                    Спасибо за обращение! Я свяжусь с вами в ближайшее время.
+                                </p>
+                            `;
+                            
+                            contactForm.parentNode.insertBefore(successMessage, contactForm.nextSibling);
+                            
+                            // Сбрасываем форму
+                            contactForm.reset();
+                            
+                            // Восстанавливаем кнопку
+                            submitBtn.textContent = originalText;
+                            submitBtn.disabled = false;
+                            
+                            // Прокручиваем к сообщению
+                            successMessage.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                            
+                            // Убираем сообщение через 10 секунд
+                            setTimeout(() => {
+                                successMessage.style.opacity = '0';
+                                successMessage.style.transform = 'translateY(-10px)';
+                                successMessage.style.transition = 'opacity 0.5s, transform 0.5s';
+                                setTimeout(() => {
+                                    if (successMessage.parentNode) {
+                                        successMessage.parentNode.removeChild(successMessage);
+                                    }
+                                }, 500);
+                            }, 10000);
+                        }, 1500);
+                    }
+                    
+                    function showError(inputElement, message) {
+                        inputElement.style.borderColor = '#ff6b6b';
+                        const errorDiv = document.createElement('div');
+                        errorDiv.className = 'error-message';
+                        errorDiv.style.cssText = `
+                            color: #ff6b6b;
+                            font-size: 0.85rem;
+                            margin-top: 5px;
+                        `;
+                        errorDiv.textContent = message;
+                        inputElement.parentNode.appendChild(errorDiv);
+                    }
+                });
+            }
+            
+            // Анимация появления контактных элементов
+            const contactItems = document.querySelectorAll('.contact-item');
+            contactItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(-20px)';
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateX(0)';
+                }, 100 * index + 300);
+            });
+            
+            // Анимация для карты
+            const mapSection = document.querySelector('.map-section');
+            if (mapSection) {
+                mapSection.style.opacity = '0';
+                mapSection.style.transform = 'translateX(20px)';
+                mapSection.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    mapSection.style.opacity = '1';
+                    mapSection.style.transform = 'translateX(0)';
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

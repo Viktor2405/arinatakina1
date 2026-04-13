@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Radiant Reflections</title>
+    <!-- ТОЛЬКО ОДИН CSS файл - service.css -->
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <div class="logo">RR</div>
+                        <div class="logo-text">
+                            <div class="logo-main">Radiant Reflections</div>
+                            <div class="logo-sub">Профессиональный визажист</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html" class="active">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="booking.html">Запись</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Услуги</h1>
+            <p>Профессиональный макияж для любого мероприятия</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <!-- Сетка услуг 2x2 -->
+            <div class="services-grid">
+                <!-- Левая колонка -->
+                <div class="service-card">
+                    <h3>Свадебный макияж</h3>
+                    <p class="service-price">от 8 000 ₽</p>
+                    <ul class="service-features">
+                        <li>Тест-макияж</li>
+                        <li>Макияж в день свадьбы</li>
+                        <li>Консультация по уходу</li>
+                        <li>Стойкость 12+ часов</li>
+                    </ul>
+                    <a href="booking.html?service=Свадебный макияж" class="btn-brown">Записаться</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Обучение макияжу</h3>
+                    <p class="service-price">от 20 000 ₽</p>
+                    <ul class="service-features">
+                        <li>Индивидуальные уроки</li>
+                        <li>Подбор косметики</li>
+                        <li>Техники нанесения</li>
+                        <li>Практические занятия</li>
+                    </ul>
+                    <a href="booking.html?service=Обучение макияжу" class="btn-brown">Записаться</a>
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="service-card">
+                    <h3>Вечерний макияж</h3>
+                    <p class="service-price">от 5 500 ₽</p>
+                    <ul class="service-features">
+                        <li>Для мероприятий</li>
+                        <li>Индивидуальный образ</li>
+                        <li>Фотосессии</li>
+                        <li>Стойкость 8+ часов</li>
+                    </ul>
+                    <a href="booking.html?service=Вечерний макияж" class="btn-brown">Записаться</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Express-макияж</h3>
+                    <p class="service-price">от 4 000 ₽</p>
+                    <ul class="service-features">
+                        <li>Ежедневный макияж</li>
+                        <li>Быстрое выполнение</li>
+                        <li>Естественный образ</li>
+                        <li>Для офиса и встреч</li>
+                    </ul>
+                    <a href="booking.html?service=Express-макияж" class="btn-brown">Записаться</a>
+                </div>
+            </div>
+            
+            <!-- Акции и предложения -->
+            <section class="promo-section">
+                <h2 class="promo-title">🔥 Акции и предложения</h2>
+                <p class="promo-subtitle">Специальные условия этой недели. Выбирайте выгодные варианты!</p>
+                
+                <div id="promoContainer">
+                    <!-- Контент будет создан через JavaScript -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <div class="logo-container">
+                            <div class="logo">RR</div>
+                            <div class="logo-text">
+                                <div class="logo-main">Radiant Reflections</div>
+                                <div class="logo-sub">Ваш профессиональный визажист</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Radiant Reflections. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Простой JavaScript для акций
+        document.addEventListener('DOMContentLoaded', function() {
+            const promoContainer = document.getElementById('promoContainer');
+            
+            // Если контейнер существует
+            if (promoContainer) {
+                // Создаем сетку для акций
+                const grid = document.createElement('div');
+                grid.className = 'promo-grid';
+                grid.style.display = 'grid';
+                grid.style.gridTemplateColumns = 'repeat(auto-fit, minmax(300px, 1fr))';
+                grid.style.gap = '25px';
+                grid.style.marginTop = '2rem';
+                
+                // Создаем 2 акции для примера
+                const promotions = [
+                    {
+                        title: "Свадебный пакет Премиум",
+                        description: "Полный комплект услуг для идеальной свадьбы",
+                        oldPrice: "20 000 ₽",
+                        newPrice: "16 500 ₽",
+                        discount: "-17%",
+                        tag: "ХИТ",
+                        tagColor: "#FF6B8B",
+                        link: "booking.html?service=Свадебный пакет премиум"
+                    },
+                    {
+                        title: "Курс 'Мастер макияжа'",
+                        description: "5 уроков + набор кистей в подарок",
+                        oldPrice: "25 000 ₽",
+                        newPrice: "19 900 ₽",
+                        discount: "+ кисти",
+                        tag: "ОБУЧЕНИЕ",
+                        tagColor: "#4ECDC4",
+                        link: "booking.html?service=Курс 'Мастер макияжа'"
+                    }
+                ];
+                
+                // Создаем карточки акций
+                promotions.forEach(promo => {
+                    const card = document.createElement('div');
+                    card.className = 'promo-card';
+                    card.style.cssText = `
+                        background: white;
+                        border-radius: 10px;
+                        padding: 25px;
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                        transition: all 0.3s ease;
+                    `;
+                    
+                    // Тег
+                    const tag = document.createElement('div');
+                    tag.textContent = promo.tag;
+                    tag.style.cssText = `
+                        background: ${promo.tagColor};
+                        color: white;
+                        padding: 5px 15px;
+                        border-radius: 15px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        display: inline-block;
+                        margin-bottom: 15px;
+                    `;
+                    
+                    // Заголовок
+                    const title = document.createElement('h3');
+                    title.textContent = promo.title;
+                    title.style.cssText = `
+                        font-size: 18px;
+                        color: #2c3e50;
+                        margin-bottom: 10px;
+                    `;
+                    
+                    // Описание
+                    const desc = document.createElement('p');
+                    desc.textContent = promo.description;
+                    desc.style.cssText = `
+                        color: #666;
+                        margin-bottom: 20px;
+                    `;
+                    
+                    // Цены
+                    const priceSection = document.createElement('div');
+                    priceSection.style.cssText = `
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 20px;
+                    `;
+                    
+                    const priceContainer = document.createElement('div');
+                    
+                    if (promo.oldPrice) {
+                        const oldPrice = document.createElement('span');
+                        oldPrice.textContent = promo.oldPrice;
+                        oldPrice.style.cssText = `
+                            text-decoration: line-through;
+                            color: #999;
+                            margin-right: 10px;
+                        `;
+                        priceContainer.appendChild(oldPrice);
+                    }
+                    
+                    const newPrice = document.createElement('span');
+                    newPrice.textContent = promo.newPrice;
+                    newPrice.style.cssText = `
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: #8b7355;
+                    `;
+                    priceContainer.appendChild(newPrice);
+                    
+                    const discount = document.createElement('div');
+                    discount.textContent = promo.discount;
+                    discount.style.cssText = `
+                        background: rgba(139, 115, 85, 0.1);
+                        color: #8b7355;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        font-weight: bold;
+                    `;
+                    
+                    priceSection.appendChild(priceContainer);
+                    priceSection.appendChild(discount);
+                    
+                    // Кнопка
+                    const cta = document.createElement('a');
+                    cta.href = promo.link;
+                    cta.textContent = 'Записаться на акцию';
+                    cta.style.cssText = `
+                        display: block;
+                        background: #8b7355;
+                        color: white;
+                        text-align: center;
+                        padding: 12px;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        margin-top: 25px;
+                        transition: background 0.3s;
+                    `;
+                    
+                    // Эффекты
+                    cta.addEventListener('mouseenter', function() {
+                        this.style.backgroundColor = '#7a6345';
+                    });
+                    
+                    cta.addEventListener('mouseleave', function() {
+                        this.style.backgroundColor = '#8b7355';
+                    });
+                    
+                    card.addEventListener('mouseenter', function() {
+                        this.style.transform = 'translateY(-5px)';
+                        this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+                    });
+                    
+                    card.addEventListener('mouseleave', function() {
+                        this.style.transform = 'translateY(0)';
+                        this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                    });
+                    
+                    // Собираем карточку
+                    card.appendChild(tag);
+                    card.appendChild(title);
+                    card.appendChild(desc);
+                    card.appendChild(priceSection);
+                    card.appendChild(cta);
+                    
+                    grid.appendChild(card);
+                });
+                
+                promoContainer.appendChild(grid);
+            }
+        });
+    </script>
+    
+    <!-- Подключаем общий скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>

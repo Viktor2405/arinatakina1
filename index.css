@@ -1,0 +1,164 @@
+@import url('../style.css');
+
+.about-section {
+    padding: 5rem 0;
+    background: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-photo {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    height: 500px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    color: #8b7355;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about-feature-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.1), rgba(212, 184, 150, 0.1));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b7355;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.about-feature-text h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.about-feature-text p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Стили для активной ссылки в навигации */
+.nav-menu .active {
+    color: #8b7355 !important; /* Коричневый цвет */
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-menu .active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8b7355;
+    border-radius: 1px;
+}
+
+/* Убираем стандартное подчеркивание для всех ссылок */
+.nav-menu a {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Ховер эффект для неактивных ссылок */
+.nav-menu a:not(.active):hover {
+    color: #8b7355 !important;
+}
+
+/* Анимация при наведении на неактивные ссылки */
+.nav-menu a:not(.active):hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #8b7355;
+    border-radius: 1px;
+    opacity: 0.5;
+}
+
+/* Улучшаем отображение пунктов меню */
+.nav-menu li {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+/* Адаптивность для секции "Обо мне" */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-photo {
+        max-width: 500px;
+    }
+    
+    .about-photo img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-photo img {
+        height: 350px;
+    }
+}
