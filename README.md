@@ -1,2 +1,2 @@
-# Radiant-Reflections
+# Arina Takina
 сайт визажиста
